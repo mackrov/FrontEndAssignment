@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Yash's Blog</title>
+    </head>
+<link href="css/index.css" rel="stylesheet">
+
+    <body>
+        <header>
+        <h1 title="header" class="heading">My Personal Blog</h1>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="columns"> 
+                    <!-- first column class -->
+            <section class="main-content">
+                <h2 class="subheading">Everything <span class="text-white">About Me</span></h2>
+               <div class="columns">
+                <!-- second column class -->
+                <!-- here we are using the same div class twice, though we can
+                use different class name, but we have to wrap them in two
+                 divs ,first time when we don't have it twice, display:flex 
+                 is called on column class and it will convert all direct child into columns
+                 but here only 2 direct child are found, 1 is section's main content
+                 and the other one is aside's sidebar class, since list are inside the section
+                 they are grouped together in the column, 
+                 when we create a new div class of column(same name here) this one's direct
+                 child are div class col-left and col-right, we had to group them in different div
+                 else they will be grouped as single column when display:flex is called on columns 
+         -->
+                <div class="col-left">
+                <img src="img/chameleon.png" alt="pic of a chameleon">
+                </div>
+                <div class="col-right">
+                    <p>Hi, this is Yash aka -mAckRoV, I am from Lucknow, I have done my graduation from
+                        SRM University Chennai
+                        currently I'm working at Mouritech in Bengaluru
+                        Throughout the duration of my course I have worked on various
+                        projects and participated in numerous activities that has helped
+                        me gain the technical skills that are listed below -
+                    </p>
+    
+                    <!-- unordered list -->
+                    <ul>
+    <li>Android Studio</li>
+      <li> Java</li>
+      <li> Python</li>
+        <li> HTML,CSS & JS</li>
+            <li>React</li>
+                <li>Spring Boot</li>
+                    </ul>
+    
+    
+                    <p> I plan on learning Front End developement
+                        for which i will have to learn HTML, CSS , JavaScript,
+                        Node.JS , JQUERY & React,
+                        I'm also planning on doing certifcations that will help me
+                        strengthen my learnings and upgrade my skills
+                    </p>
+                    </div>
+                </div>
+                </section>
+            <div class="sidebar">
+            <h2 class="subheading">My Favourite <span class="text-white">Activities</span></h2>
+            <!-- ordered list -->
+            <ol>
+                <li>Ziplining</li>
+                    <li>Rafting</li>
+                        <li>Bungy Jumping</li>
+                            <li>Rappelling</li>
+                                <li>Paragliding</li>
+                                    <li>Hang gliding</li>
+                                        <li>ATV driving</li>
+                                            <li>Hiking & Trekking</li>
+                                                <li>Skydiving</li>
+                                                    <li>Surfing</li>
+            </ol>
+            <p class="source">🤖:<a href="file:///E:/FrontEndAssignment/PortfolioWeb/index.html">Click Here for My Portfolio</a></p>
+        </div>
+    </div> 
+    <!-- close column -->
+</div>
+<!-- close container -->
+    </main>
+    
+    </body>
+
+</html>
